@@ -149,6 +149,23 @@ section.unit article{
 		   -moz-box-flex: 1;
 
 	}
+
+	.ad>div{
+		transition: background .5s;
+	}
+
+	.ad:hover>div{
+		background: rgba(0,0,0,.5);
+	}
+
+	.ad .button {
+		box-sizing: border-box;
+		transition: padding .2s;
+	}
+
+	.ad:hover .button{
+		padding: 20px 35px;
+	}
 }
 
 /* For tablets only */
