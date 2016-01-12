@@ -115,3 +115,66 @@ section.unit article{
 	text-shadow:-1px 1px 2px #444;
 	box-shadow:-1px 1px 2px 1px #444;
 }
+
+/* For desktops and tablets */
+@media all and (min-width: 720px){
+	section.unit{
+		text-align: center;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-align-items: center;
+			 -ms-flex-align: center;
+				align-items: center;
+		-webkit-justify-content: center;
+				  -ms-flex-pack: center;
+				justify-content: center;
+
+		-webkit-flex-flow: row wrap;
+			-ms-flex-flow: row wrap;
+				flex-flow: row wrap;
+		-ms-flex-line-pack: distribute;
+		-webkit-align-content: space-around;
+				align-content: space-around;
+	}
+
+	section.unit article{
+		text-align: left;
+
+		/* Older browsers */
+		-webkit-box-flex: 1;
+		   -moz-box-flex: 1;
+
+	}
+}
+
+/* For tablets only */
+@media all and (min-width: 720px) and (max-width: 1099px){
+	section.unit article{
+		/* Fallback in case of no flex support*/
+		display: inline-block;
+		width: 47.5%;
+
+		/* Newer browsers*/
+		-webkit-flex: 1 0 47.5%;
+			-ms-flex: 1 0 47.5%;
+				flex: 1 0 47.5%;
+		margin: 1%;
+	}
+
+	section.unit article:nth-child(1){
+		order: 1;
+	}
+	section.unit article:nth-child(2){
+		order: 2;
+	}
+	section.unit article:nth-child(3){
+		order: 4;
+	}
+	section.unit article:nth-child(4){
+		order: 3;
+	}
+}
