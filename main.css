@@ -179,3 +179,18 @@ section.unit article{
 		order: 3;
 	}
 }
+
+/* For desktops only */
+@media all and (min-width: 1100px){
+	section.unit article{
+		/* Fallback in case of no flex support*/
+		display: inline-block;
+		width: 30%;
+
+		/* Newer browsers*/
+		-webkit-flex: 1 0 30%;
+			-ms-flex: 1 0 30%;
+				flex: 1 0 30%;
+		margin: 1.49%;
+	}
+}
