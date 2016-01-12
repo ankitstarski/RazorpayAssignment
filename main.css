@@ -27,7 +27,6 @@ a,a:focus,a:visited{
 #wrapper{
 	padding: 20px;
 	display: block;
-	padding 10px;
 	margin: 5px auto;
 }
 
@@ -35,7 +34,7 @@ section.unit article{
 	height: 280px;
 	background-color: #777;
 	display: block;
-	margin: 10px;
+	margin: 20px 10px;
 	box-shadow: 0px 2px 5px 1px #AAA;
 	border-radius: 8px;
 	overflow: hidden;
@@ -148,6 +147,8 @@ section.unit article{
 		-webkit-box-flex: 1;
 		   -moz-box-flex: 1;
 
+		margin: 10px;
+
 	}
 
 	.ad>div{
@@ -173,13 +174,12 @@ section.unit article{
 	section.unit article{
 		/* Fallback in case of no flex support*/
 		display: inline-block;
-		width: 47.5%;
+		width: 46.5%;
 
 		/* Newer browsers*/
-		-webkit-flex: 1 0 47.5%;
-			-ms-flex: 1 0 47.5%;
-				flex: 1 0 47.5%;
-		margin: 1%;
+		-webkit-flex: 1 0 46.5%;
+			-ms-flex: 1 0 46.5%;
+				flex: 1 0 46.5%;
 	}
 
 	section.unit article:nth-child(1){
@@ -208,6 +208,5 @@ section.unit article{
 		-webkit-flex: 1 0 30%;
 			-ms-flex: 1 0 30%;
 				flex: 1 0 30%;
-		margin: 1.49%;
 	}
 }
