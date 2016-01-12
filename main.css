@@ -173,6 +173,7 @@ section.unit article{
 	}
 	section.unit article:nth-child(3){
 		order: 4;
+		float: right;
 	}
 	section.unit article:nth-child(4){
 		order: 3;
