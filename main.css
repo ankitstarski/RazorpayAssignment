@@ -1,3 +1,117 @@
 /*
  * @author: Ankit <ankit@gnome.org>;
  */
+
+/* Mobile first */
+
+@import url(https://fonts.googleapis.com/css?family=Asap);
+
+*{
+	/* We could use reset.css or normalize.css */
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	background: #E9E9E9;
+	-webkit-font-smoothing: antialiased;
+	font-family: Asap, Tahoma, Helvetica, sans-serif;
+}
+
+a,a:focus,a:visited{
+	text-decoration: none;
+	color: #EEE;
+}
+
+#wrapper{
+	padding: 20px;
+	display: block;
+	padding 10px;
+	margin: 5px auto;
+}
+
+section.unit article{
+	height: 280px;
+	background-color: #777;
+	display: block;
+	margin: 10px;
+	box-shadow: 0px 2px 5px 1px #AAA;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.pin .cover{
+	background-size: cover !important;
+	background-position: center center !important;
+	background-color: #3498DB;
+	height: 120px;
+}
+
+.pin .comment,
+.pin .profile{
+	display: block;
+	height: 80px;
+	max-height: 80px;
+	width: 100%;
+	padding: 10px;
+	font-size: 1.2em;
+	overflow: hidden;
+}
+
+.pin .comment>div,
+.pin .profile>div{
+	display: table;
+	height: 100%;
+}
+
+.pin .comment{
+	background-color: #FFFFFF;
+}
+
+.pin .profile{
+	background-color: #EFE0E0;
+}
+
+.pin .profile img{
+	border-radius: 50%;
+	box-sizing: initial;
+	border: 3px solid white;
+}
+
+.pin .profile a{
+	font-size: 1.2em;
+	color: #4A4A4A;
+}
+
+
+.pin .profile span:nth-child(2){
+	padding: 0 10px;
+}
+
+.pin .comment span,
+.pin .profile span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.ad{
+	background-size: cover !important;
+	background-position: center center !important;
+}
+
+.ad>div{
+	line-height: 280px;
+	text-align: center;
+	background:rgba(0,0,0,.3);
+}
+
+.ad .button{
+	color: #EEE;
+	border: 2px solid white;
+	padding:10px 25px;
+	font-size: 1.3em;
+	font-weight: 500;
+	text-shadow:-1px 1px 2px #444;
+	box-shadow:-1px 1px 2px 1px #444;
+}
